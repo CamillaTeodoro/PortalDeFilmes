@@ -1,114 +1,316 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Portal de Filmes</title>
-</head>
-<body>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container">
+        <a href="#" class="navbar-brand">Portal de Filmes</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    
-    <nav class=" navbar navbar-expand-lg bg-dark navbar-dark ">
-        <div class="container">
-            <a href="#" class="navbar-brand">Portal de Filmes</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#lancamentos" class="navbar-link">Lançamentos</a>
+            </li>
+            <li class="nav-item">
+              <a href="#emdestaque" class="navbar-link">Em Destaque</a>
+            </li>
+            <li class="nav-item">
+              <a href="#avaliacoes" class="navbar-link">Avaliações</a>
+            </li>
+            <li class="nav-item">
+              <a href="#entrevistas" class="navbar-link"
+                >Entrevistas & Making of</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#novidades" class="navbar-link">Novidades</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2 form-control-sm"
+              type="search"
+              placeholder="Pesquisar filme"
+              aria-label="Search"
+            />
+            <button class="btn btn-sm btn-outline-danger" type="submit">
+              Pesquisar
             </button>
-
-            <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                            <a href="#lancamentos" class="navbar-link">Lançamentos</a>
-                    </li>
-                    <li class="nav-item">
-                            <a href="#emdestaque" class="navbar-link">Em Destaque</a>
-                    </li>
-                    <li class="nav-item">
-                            <a href="#avaliacoes" class="navbar-link">Avaliações</a>
-                    </li>
-                    <li class="nav-item">
-                            <a href="#entrevistas" class="navbar-link">Entrevistas & Making of</a>
-                    </li>
-                    <li class="nav-item">
-                            <a href="#novidades" class="navbar-link">Novidades</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2 form-control-sm" type="search" placeholder="Pesquisar filme" aria-label="Search">
-                    <button class="btn btn-sm btn-outline-danger" type="submit">Pesquisar</button>
-                </form>
-            </div>
+          </form>
         </div>
-           
+      </div>
     </nav>
-   
-    
+
     <main class="container">
-        <section class="row ">
+      <section class="row">
+        <div class="col-12">
+          <div class="row">
             <div class="col-12">
-                <div class="row">
-                    <div class="col-12">
-                        <h1 id="lancamentos">Lançamentos</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                          <div class=" col-6 carousel-item active">
-                            <iframe  src="https://www.youtube.com/embed/59MJfJPP5eo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            
-                            <h2>Firestarter</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis repellat impedit vero, dolor, doloremque blanditiis obcaecati laborum inventore facilis repudiandae ullam aliquam laudantium voluptate nemo deleniti quis tempora quasi eaque dicta expedita amet sit. Quisquam magnam, repellendus exercitationem dolorem animi ipsam tenetur quibusdam dicta, nihil ducimus tempora saepe architecto molestias!</p>
-                          </div>
-                          <div class=" col-6 carousel-item">
-                            <iframe  src="https://www.youtube.com/embed/GBNKXNLm6ug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <h2>The Black Phone</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis repellat impedit vero, dolor, doloremque blanditiis obcaecati laborum inventore facilis repudiandae ullam aliquam laudantium voluptate nemo deleniti quis tempora quasi eaque dicta expedita amet sit. Quisquam magnam, repellendus exercitationem dolorem animi ipsam tenetur quibusdam dicta, nihil ducimus tempora saepe architecto molestias!</p>
-                          </div>
-                          <div class=" col-6 carousel-item">
-                            <iframe src="https://www.youtube.com/embed/oZ6iiRrz1SY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <h2>Morbius</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis repellat impedit vero, dolor, doloremque blanditiis obcaecati laborum inventore facilis repudiandae ullam aliquam laudantium voluptate nemo deleniti quis tempora quasi eaque dicta expedita amet sit. Quisquam magnam, repellendus exercitationem dolorem animi ipsam tenetur quibusdam dicta, nihil ducimus tempora saepe architecto molestias!</p>
-                          </div>
-                          
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
-                      </div>
-                    <div class="col-6">
-                        
-                    </div>
-                    <div class="col-6">
-                       
-                    </div>
-                </div>
+              <h1 id="lancamentos">Lançamentos</h1>
             </div>
+          </div>
+          <div class="row">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="col-6 carousel-item active">
+                  <iframe
+                    src="https://www.youtube.com/embed/59MJfJPP5eo"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
 
+                  <h2>Firestarter</h2>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Debitis repellat impedit vero, dolor, doloremque blanditiis
+                    obcaecati laborum inventore facilis repudiandae ullam
+                    aliquam laudantium voluptate nemo deleniti quis tempora
+                    quasi eaque dicta expedita amet sit. Quisquam magnam,
+                    repellendus exercitationem dolorem animi ipsam tenetur
+                    quibusdam dicta, nihil ducimus tempora saepe architecto
+                    molestias!
+                  </p>
+                </div>
+                <div class="col-6 carousel-item">
+                  <iframe
+                    src="https://www.youtube.com/embed/GBNKXNLm6ug"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <h2>The Black Phone</h2>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Debitis repellat impedit vero, dolor, doloremque blanditiis
+                    obcaecati laborum inventore facilis repudiandae ullam
+                    aliquam laudantium voluptate nemo deleniti quis tempora
+                    quasi eaque dicta expedita amet sit. Quisquam magnam,
+                    repellendus exercitationem dolorem animi ipsam tenetur
+                    quibusdam dicta, nihil ducimus tempora saepe architecto
+                    molestias!
+                  </p>
+                </div>
+                <div class="col-6 carousel-item">
+                  <iframe
+                    src="https://www.youtube.com/embed/oZ6iiRrz1SY"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                  <h2>Morbius</h2>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Debitis repellat impedit vero, dolor, doloremque blanditiis
+                    obcaecati laborum inventore facilis repudiandae ullam
+                    aliquam laudantium voluptate nemo deleniti quis tempora
+                    quasi eaque dicta expedita amet sit. Quisquam magnam,
+                    repellendus exercitationem dolorem animi ipsam tenetur
+                    quibusdam dicta, nihil ducimus tempora saepe architecto
+                    molestias!
+                  </p>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Próximo</span>
+              </button>
+            </div>
+            <div class="col-6"></div>
+            <div class="col-6"></div>
+          </div>
+        </div>
+      </section>
+      <section id="emdestaque" class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-9">
+              <h2>Em destaque</h2>
+            </div>
+            <div class="col-3">
+              <select
+                class="form-select col-3"
+                aria-label="Default select example"
+              >
+                <option selected>Escolha a categoria</option>
+                <option value="1">Clássico</option>
+                <option value="2">Psicológico</option>
+                <option value="3">Slasher</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-3">
+              <img
+                src="img/us.png"
+                class="rounded float-start"
+                alt="poster do filme Us"
+              />
+            </div>
+            <div class="col-3">
+              <img
+                src="img/getout.png"
+                class="rounded float-start"
+                alt="poster do filme Get Out"
+              />
+            </div>
+            <div class="col-3">
+              <img
+                src="img/hereditary.png"
+                class="rounded float-start"
+                alt="poster do filme Hereditary"
+              />
+            </div>
+            <div class="col-3">
+              <img
+                src="img/midsommar.png"
+                class="rounded float-start"
+                alt="poster do filme Midsommar"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <button type="button" class="ms-auto col-2 btn btn-danger">
+              + Carregar mais filmes
+            </button>
+          </div>
+        </div>
+      </section>
 
-        </section>
-
+      <section id="avaliacoes">
+        <div class="row">
+          <div class="col-12">
+            <div class="row">
+              <h2 class="col-12">Últimas avaliações</h2>
+            </div>
+            <div class="row">
+              <div class="card-group">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      This card has supporting text below as a natural lead-in
+                      to additional content.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This card has even
+                      longer content than the first to show that equal height
+                      action.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <button type="button" class="ms-auto col-2 btn btn-danger">
+              + Carregar mais avaliações
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
+    <footer></footer>
 
-
-    </footer>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
