@@ -14,8 +14,12 @@
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
             <div class="container">
                 <a href="#" class="navbar-brand">Portal de Filmes</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
 
-                <div class="collapse navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navmenu">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a href="#lancamentos" class="navbar-link">Lançamentos</a>
@@ -34,7 +38,7 @@
                         </li>
                     </ul>
                     <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar filme" aria-label="Search">
                         <button class="btn btn-sm btn-outline-danger" type="submit">Pesquisar</button>
                       </form>
                 </div>
