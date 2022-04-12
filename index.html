@@ -12,7 +12,19 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Portal de Filmes</title>
+    <style>
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+      }
+    </style>
   </head>
+
   <body>
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
       <div class="container">
@@ -46,7 +58,7 @@
               <a href="#novidades" class="navbar-link">Novidades</a>
             </li>
           </ul>
-          <form class="d-flex">
+          <form class="d-flex justify-content-end">
             <input
               class="form-control me-2 form-control-sm"
               type="search"
@@ -61,18 +73,19 @@
       </div>
     </nav>
 
-    <main class="container">
-      <section class="row">
+    <div class="container">
+      <section class="row lancamentos bg-light py-3">
         <div class="col-12">
           <div class="row">
             <div class="col-12">
-              <h1 id="lancamentos">Lançamentos</h1>
+              <h1 class="text-center">Lançamentos</h1>
             </div>
           </div>
-          <div class="row">
+
+          <div class="col-12">
             <div
               id="carouselExampleIndicators"
-              class="carousel slide"
+              class="carousel carousel-dark slide"
               data-bs-ride="carousel"
             >
               <div class="carousel-indicators">
@@ -98,218 +111,444 @@
                 ></button>
               </div>
               <div class="carousel-inner">
-                <div class="col-6 carousel-item active">
-                  <iframe
-                    src="https://www.youtube.com/embed/59MJfJPP5eo"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
+                <div class="carousel-item active">
+                  <div class="row mb-5">
+                    <div class="col-6">
+                      <iframe
+                        src="https://www.youtube.com/embed/oZ6iiRrz1SY"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <div class="col-6">
+                      <h2>Morbious</h2>
+                      <p>
+                        <b>Sinopse:</b> Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Fugiat laudantium quidem sed
+                        inventore. Rem vero perferendis saepe reiciendis modi
+                        itaque dolorum tenetur illo tempore non rerum omnis,
+                        reprehenderit est iste?
+                      </p>
 
-                  <h2>Firestarter</h2>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Debitis repellat impedit vero, dolor, doloremque blanditiis
-                    obcaecati laborum inventore facilis repudiandae ullam
-                    aliquam laudantium voluptate nemo deleniti quis tempora
-                    quasi eaque dicta expedita amet sit. Quisquam magnam,
-                    repellendus exercitationem dolorem animi ipsam tenetur
-                    quibusdam dicta, nihil ducimus tempora saepe architecto
-                    molestias!
-                  </p>
+                      <div class="diretor d-flex justify-content-between">
+                        <p><b>Diretor:</b> Sei la</p>
+                        <p><b>Diretor:</b> Sei la</p>
+                        <p><b>Diretor:</b> Sei la</p>
+                      </div>
+
+                      <p><b>Elenco:</b></p>
+
+                      <p>Nome do ator 1 | Nome do ator 3 | Nome do ator 3</p>
+
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-6 carousel-item">
-                  <iframe
-                    src="https://www.youtube.com/embed/GBNKXNLm6ug"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                  <h2>The Black Phone</h2>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Debitis repellat impedit vero, dolor, doloremque blanditiis
-                    obcaecati laborum inventore facilis repudiandae ullam
-                    aliquam laudantium voluptate nemo deleniti quis tempora
-                    quasi eaque dicta expedita amet sit. Quisquam magnam,
-                    repellendus exercitationem dolorem animi ipsam tenetur
-                    quibusdam dicta, nihil ducimus tempora saepe architecto
-                    molestias!
-                  </p>
+                <div class="carousel-item">
+                  <div class="row mb-5">
+                    <div class="col-6">
+                      <iframe
+                        src="https://www.youtube.com/embed/oZ6iiRrz1SY"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <div class="col-6">
+                      <h2>Morbious</h2>
+                      <p>
+                        <b>Sinopse:</b> Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Fugiat laudantium quidem sed
+                        inventore. Rem vero perferendis saepe reiciendis modi
+                        itaque dolorum tenetur illo tempore non rerum omnis,
+                        reprehenderit est iste?
+                      </p>
+
+                      <div class="diretor d-flex justify-content-between">
+                        <p><b>Diretor:</b> Sei la</p>
+                        <p><b>Diretor:</b> Sei la</p>
+                        <p><b>Diretor:</b> Sei la</p>
+                      </div>
+
+                      <p><b>Elenco:</b></p>
+
+                      <p>Nome do ator 1 | Nome do ator 3 | Nome do ator 3</p>
+
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-6 carousel-item">
-                  <iframe
-                    src="https://www.youtube.com/embed/oZ6iiRrz1SY"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                  <h2>Morbius</h2>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Debitis repellat impedit vero, dolor, doloremque blanditiis
-                    obcaecati laborum inventore facilis repudiandae ullam
-                    aliquam laudantium voluptate nemo deleniti quis tempora
-                    quasi eaque dicta expedita amet sit. Quisquam magnam,
-                    repellendus exercitationem dolorem animi ipsam tenetur
-                    quibusdam dicta, nihil ducimus tempora saepe architecto
-                    molestias!
-                  </p>
+                <div class="carousel-item">
+                  <div class="row mb-5">
+                    <div class="col-6">
+                      <iframe
+                        src="https://www.youtube.com/embed/oZ6iiRrz1SY"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                    <div class="col-6">
+                      <h2>Morbious</h2>
+                      <p>
+                        <b>Sinopse:</b> Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Fugiat laudantium quidem sed
+                        inventore. Rem vero perferendis saepe reiciendis modi
+                        itaque dolorum tenetur illo tempore non rerum omnis,
+                        reprehenderit est iste?
+                      </p>
+
+                      <div class="diretor d-flex justify-content-between">
+                        <p><b>Diretor:</b> Sei la</p>
+                        <p><b>Diretor:</b> Sei la</p>
+                        <p><b>Diretor:</b> Sei la</p>
+                      </div>
+
+                      <p><b>Elenco:</b></p>
+
+                      <p>Nome do ator 1 | Nome do ator 3 | Nome do ator 3</p>
+
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Próximo</span>
-              </button>
             </div>
-            <div class="col-6"></div>
-            <div class="col-6"></div>
           </div>
         </div>
       </section>
-      <section id="emdestaque" class="row">
+
+      <section class="row em-destaque py-3">
         <div class="col-12">
           <div class="row">
             <div class="col-9">
-              <h2>Em destaque</h2>
+              <h1>Em Destaque</h1>
             </div>
             <div class="col-3">
-              <select
-                class="form-select col-3"
-                aria-label="Default select example"
-              >
-                <option selected>Escolha a categoria</option>
-                <option value="1">Clássico</option>
-                <option value="2">Psicológico</option>
-                <option value="3">Slasher</option>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
               </select>
             </div>
           </div>
           <div class="row">
             <div class="col-3">
-              <img
-                src="img/us.png"
-                class="rounded float-start"
-                alt="poster do filme Us"
-              />
+              <img src="morbius.jpg" alt="morbius" class="w-100" />
             </div>
             <div class="col-3">
-              <img
-                src="img/getout.png"
-                class="rounded float-start"
-                alt="poster do filme Get Out"
-              />
+              <img src="morbius.jpg" alt="morbius" class="w-100" />
             </div>
             <div class="col-3">
-              <img
-                src="img/hereditary.png"
-                class="rounded float-start"
-                alt="poster do filme Hereditary"
-              />
+              <img src="morbius.jpg" alt="morbius" class="w-100" />
             </div>
             <div class="col-3">
-              <img
-                src="img/midsommar.png"
-                class="rounded float-start"
-                alt="poster do filme Midsommar"
-              />
+              <img src="morbius.jpg" alt="morbius" class="w-100" />
             </div>
           </div>
           <div class="row">
-            <button type="button" class="ms-auto col-2 btn btn-danger">
-              + Carregar mais filmes
-            </button>
+            <div class="col-12 py-3 d-flex justify-content-end">
+              <button type="button" class="btn btn-primary">Primary</button>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="avaliacoes">
-        <div class="row">
-          <div class="col-12">
-            <div class="row">
-              <h2 class="col-12">Últimas avaliações</h2>
+      <section class="row avaliacoes bg-light py-3">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12">
+              <h1>Últimas Avaliações</h1>
             </div>
-            <div class="row">
-              <div class="card-group">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
-                    </p>
-                    <p class="card-text">
-                      <small class="text-muted">Last updated 3 mins ago</small>
-                    </p>
+          </div>
+          <div class="row">
+            <div class="col-4 avaliacao">
+              <div class="row">
+                <div class="col-2 d-flex justify-content-center">
+                  <i class="bi bi-person-circle" style="font-size: 2rem"></i>
+                </div>
+                <div class="col-10">
+                  <h2>Nome do Avaliador</h2>
+                  <p>
+                    <b>Avaliacao:</b> Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Dicta nulla quas magni ullam molestias,
+                    quos sequi vitae beatae in consequatur laborum asperiores.
+                    Pariatur eaque cumque magni voluptate veritatis libero
+                    excepturi!
+                  </p>
+                  <div class="d-flex justify-content-between">
+                    <span>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                    </span>
+                    <span><b>01/01/2022</b></span>
                   </div>
                 </div>
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      This card has supporting text below as a natural lead-in
-                      to additional content.
-                    </p>
-                    <p class="card-text">
-                      <small class="text-muted">Last updated 3 mins ago</small>
-                    </p>
+              </div>
+            </div>
+            <div class="col-4 avaliacao">
+              <div class="row">
+                <div class="col-2 d-flex justify-content-center">
+                  <i class="bi bi-person-circle" style="font-size: 2rem"></i>
+                </div>
+                <div class="col-10">
+                  <h2>Nome do Avaliador</h2>
+                  <p>
+                    <b>Avaliacao:</b> Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Dicta nulla quas magni ullam molestias,
+                    quos sequi vitae beatae in consequatur laborum asperiores.
+                    Pariatur eaque cumque magni voluptate veritatis libero
+                    excepturi!
+                  </p>
+                  <div class="d-flex justify-content-between">
+                    <span>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                    </span>
+                    <span><b>01/01/2022</b></span>
                   </div>
                 </div>
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This card has even
-                      longer content than the first to show that equal height
-                      action.
-                    </p>
-                    <p class="card-text">
-                      <small class="text-muted">Last updated 3 mins ago</small>
-                    </p>
+              </div>
+            </div>
+            <div class="col-4 avaliacao">
+              <div class="row">
+                <div class="col-2 d-flex justify-content-center">
+                  <i class="bi bi-person-circle" style="font-size: 2rem"></i>
+                </div>
+                <div class="col-10">
+                  <h2>Nome do Avaliador</h2>
+                  <p>
+                    <b>Avaliacao:</b> Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Dicta nulla quas magni ullam molestias,
+                    quos sequi vitae beatae in consequatur laborum asperiores.
+                    Pariatur eaque cumque magni voluptate veritatis libero
+                    excepturi!
+                  </p>
+                  <div class="d-flex justify-content-between">
+                    <span>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                    </span>
+                    <span><b>01/01/2022</b></span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="row">
-            <button type="button" class="ms-auto col-2 btn btn-danger">
-              + Carregar mais avaliações
-            </button>
+            <div class="col-12 py-3 d-flex justify-content-end">
+              <button type="button" class="btn btn-primary">Primary</button>
+            </div>
           </div>
         </div>
       </section>
-    </main>
 
-    <footer></footer>
+      <section class="row entrevistas py-3">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12">
+              <h1>Entrevistas & Making of</h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <div>
+                <iframe
+                  src="https://www.youtube.com/embed/oZ6iiRrz1SY"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <p><b>Filme:</b> Nome do Filme</p>
+              <p><b>Diretor:</b> Nome Diretor</p>
+              <p><b>Roteiro:</b> Nome roteiro</p>
+            </div>
+
+            <div class="col-4">
+              <div>
+                <iframe
+                  src="https://www.youtube.com/embed/oZ6iiRrz1SY"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <p><b>Filme:</b> Nome do Filme</p>
+              <p><b>Diretor:</b> Nome Diretor</p>
+              <p><b>Roteiro:</b> Nome roteiro</p>
+            </div>
+
+            <div class="col-4">
+              <div>
+                <iframe
+                  src="https://www.youtube.com/embed/oZ6iiRrz1SY"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <p><b>Filme:</b> Nome do Filme</p>
+              <p><b>Diretor:</b> Nome Diretor</p>
+              <p><b>Roteiro:</b> Nome roteiro</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 py-3 d-flex justify-content-end">
+              <button type="button" class="btn btn-primary">Primary</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="row novidades">
+        <div class="col-1"></div>
+        <div class="col-7">
+          <div class="row">
+            <div class="col-12">
+              <h1>Novidades</h1>
+            </div>
+          </div>
+          <div class="row materia py-2">
+            <div class="col-3">
+              <img src="morbius.jpg" alt="morbius" class="w-100" />
+            </div>
+            <div class="col-9">
+              <h2>Titulo da Materia</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
+                assumenda nam modi. Esse atque vel quis? Voluptatum doloribus
+                eius laborum optio alias dolorum rerum quis, suscipit voluptate
+                eum consequatur officia.
+              </p>
+
+              <span class="badge rounded-pill bg-secondary">Secondary</span>
+              <span class="badge rounded-pill bg-secondary">Secondary</span>
+              <span class="badge rounded-pill bg-secondary">Secondary</span>
+            </div>
+          </div>
+          <hr />
+          <div class="row materia py-2">
+            <div class="col-3">
+              <img src="morbius.jpg" alt="morbius" class="w-100" />
+            </div>
+            <div class="col-9">
+              <h2>Titulo da Materia</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
+                assumenda nam modi. Esse atque vel quis? Voluptatum doloribus
+                eius laborum optio alias dolorum rerum quis, suscipit voluptate
+                eum consequatur officia.
+              </p>
+
+              <span class="badge rounded-pill bg-secondary">Secondary</span>
+              <span class="badge rounded-pill bg-secondary">Secondary</span>
+              <span class="badge rounded-pill bg-secondary">Secondary</span>
+            </div>
+          </div>
+          <hr />
+          <div class="row materia py-2">
+            <div class="col-3">
+              <img src="morbius.jpg" alt="morbius" class="w-100" />
+            </div>
+            <div class="col-9">
+              <h2>Titulo da Materia</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
+                assumenda nam modi. Esse atque vel quis? Voluptatum doloribus
+                eius laborum optio alias dolorum rerum quis, suscipit voluptate
+                eum consequatur officia.
+              </p>
+
+              <span class="badge rounded-pill bg-secondary">Secondary</span>
+              <span class="badge rounded-pill bg-secondary">Secondary</span>
+              <span class="badge rounded-pill bg-secondary">Secondary</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <h1>Sobre</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur,
+            dolores nisi veniam possimus quae sit cupiditate! Aut non odit id
+            amet, iusto blanditiis quasi dignissimos libero minima et saepe
+            aperiam?
+          </p>
+
+          <h1>Editorial</h1>
+
+          <i class="bi bi-person-fill"></i>
+          <span><b>Redacao:</b> Nome do redator</span>
+
+          <i class="bi bi-person-fill"></i>
+          <span><b>Pesquisa:</b> Nome do redator</span>
+
+          <i class="bi bi-person-fill"></i>
+          <span><b>Gerente Geral:</b> Nome do redator</span>
+
+          <br />
+          <br />
+          <br />
+
+          <p><b>redes sociais:</b></p>
+          <div class="d-flex justify-content-around">
+            <i class="bi bi-facebook" style="font-size: 2rem"></i>
+            <i class="bi bi-twitter" style="font-size: 2rem"></i>
+            <i class="bi bi-instagram" style="font-size: 2rem"></i>
+          </div>
+        </div>
+        <div class="col-1"></div>
+      </section>
+
+      <footer class="row bg-light py-3">
+        <div class="col-9">
+          <p>
+            Copyright: 2022 - Disciplina de Desenvolvimento de Interfaces Web -
+            <b>ICEI PUC Minas</b>
+          </p>
+        </div>
+        <div class="col-3">
+          <a href="#" class="btn btn-secondary">Portal de Filmes</a>
+        </div>
+      </footer>
+    </div>
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
   </body>
