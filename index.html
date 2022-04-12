@@ -11,45 +11,95 @@
 <body>
 
     
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark ">
-            <div class="container">
-                <a href="#" class="navbar-brand">Portal de Filmes</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+    <nav class=" navbar navbar-expand-lg bg-dark navbar-dark ">
+        <div class="container">
+            <a href="#" class="navbar-brand">Portal de Filmes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navmenu">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
                             <a href="#lancamentos" class="navbar-link">Lançamentos</a>
-                        </li>
-                        <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                             <a href="#emdestaque" class="navbar-link">Em Destaque</a>
-                        </li>
-                        <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                             <a href="#avaliacoes" class="navbar-link">Avaliações</a>
-                        </li>
-                        <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                             <a href="#entrevistas" class="navbar-link">Entrevistas & Making of</a>
-                        </li>
-                        <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                             <a href="#novidades" class="navbar-link">Novidades</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Pesquisar filme" aria-label="Search">
-                        <button class="btn btn-sm btn-outline-danger" type="submit">Pesquisar</button>
-                      </form>
-                </div>
-
-
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2 form-control-sm" type="search" placeholder="Pesquisar filme" aria-label="Search">
+                    <button class="btn btn-sm btn-outline-danger" type="submit">Pesquisar</button>
+                </form>
             </div>
+        </div>
            
-        </nav>
+    </nav>
    
     
-    <main>
+    <main class="container">
+        <section class="row ">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 id="lancamentos">Lançamentos</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class=" col-6 carousel-item active">
+                            <iframe  src="https://www.youtube.com/embed/59MJfJPP5eo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            
+                            <h2>Firestarter</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis repellat impedit vero, dolor, doloremque blanditiis obcaecati laborum inventore facilis repudiandae ullam aliquam laudantium voluptate nemo deleniti quis tempora quasi eaque dicta expedita amet sit. Quisquam magnam, repellendus exercitationem dolorem animi ipsam tenetur quibusdam dicta, nihil ducimus tempora saepe architecto molestias!</p>
+                          </div>
+                          <div class=" col-6 carousel-item">
+                            <iframe  src="https://www.youtube.com/embed/GBNKXNLm6ug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <h2>The Black Phone</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis repellat impedit vero, dolor, doloremque blanditiis obcaecati laborum inventore facilis repudiandae ullam aliquam laudantium voluptate nemo deleniti quis tempora quasi eaque dicta expedita amet sit. Quisquam magnam, repellendus exercitationem dolorem animi ipsam tenetur quibusdam dicta, nihil ducimus tempora saepe architecto molestias!</p>
+                          </div>
+                          <div class=" col-6 carousel-item">
+                            <iframe src="https://www.youtube.com/embed/oZ6iiRrz1SY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <h2>Morbius</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis repellat impedit vero, dolor, doloremque blanditiis obcaecati laborum inventore facilis repudiandae ullam aliquam laudantium voluptate nemo deleniti quis tempora quasi eaque dicta expedita amet sit. Quisquam magnam, repellendus exercitationem dolorem animi ipsam tenetur quibusdam dicta, nihil ducimus tempora saepe architecto molestias!</p>
+                          </div>
+                          
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                    <div class="col-6">
+                        
+                    </div>
+                    <div class="col-6">
+                       
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
 
     </main>
 

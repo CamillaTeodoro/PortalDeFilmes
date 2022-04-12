@@ -4,3 +4,10 @@
     padding: 10px;
     font-size: 13px;
 }
+.row {
+    background-color: rgb(255, 185, 127);
+}
+
+.col-12, .col-6, .col-4, .col-3 {
+    background-color: aqua;
+}
