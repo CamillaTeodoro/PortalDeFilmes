@@ -10,19 +10,12 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Portal de Filmes</title>
-    <style>
-      iframe {
-        width: 100%;
-        height: 100%;
-      }
-
-      h2 {
-        font-size: 1.5rem;
-        margin-bottom: 16px;
-      }
-    </style>
   </head>
 
   <body>
@@ -74,11 +67,11 @@
     </nav>
 
     <div class="container">
-      <section class="row lancamentos bg-light py-3">
+      <section class="row bg-light py-3" id="lancamentos">
         <div class="col-12">
           <div class="row">
             <div class="col-12">
-              <h1 class="text-center">Lançamentos</h1>
+              <h1 class="text-center py-2">Lançamentos</h1>
             </div>
           </div>
 
@@ -123,38 +116,45 @@
                       ></iframe>
                     </div>
                     <div class="col-6">
-                      <h2>Morbious</h2>
+                      <h2>Morbius</h2>
                       <p>
-                        <b>Sinopse:</b> Lorem ipsum, dolor sit amet consectetur
-                        adipisicing elit. Fugiat laudantium quidem sed
-                        inventore. Rem vero perferendis saepe reiciendis modi
-                        itaque dolorum tenetur illo tempore non rerum omnis,
-                        reprehenderit est iste?
+                        <b>Sinopse:</b> Um dos personagens mais interessantes e
+                        conflituosos da Marvel chega à tela grande com o
+                        vencedor do Oscar Jared Leto se transformando no
+                        enigmático anti-herói Michael Morbius. Gravemente
+                        adoecido com um raro distúrbio sanguíneo e determinado a
+                        salvar outros que sofrem do mesmo destino, o Dr. Morbius
+                        arrisca tudo numa aposta desesperada. E embora a
+                        princípio tudo pareça um sucesso absoluto, surge uma
+                        escuridão que se desencadeia dentro dele. O bem superará
+                        o mal - ou Morbius sucumbirá aos seus novos e
+                        misteriosos desejos?
                       </p>
 
                       <div class="diretor d-flex justify-content-between">
-                        <p><b>Diretor:</b> Sei la</p>
-                        <p><b>Diretor:</b> Sei la</p>
-                        <p><b>Diretor:</b> Sei la</p>
+                        <p><b>Diretor:</b> Daniel Espinosa</p>
+                        <p><b>Roteiro:</b> Burk Sharpless</p>
+                        <p><b>Estreia:</b> 2022</p>
                       </div>
 
                       <p><b>Elenco:</b></p>
 
-                      <p>Nome do ator 1 | Nome do ator 3 | Nome do ator 3</p>
+                      <p>Jared Leto | Michael Keaton | Adria Arjona</p>
 
-                      <i class="bi bi-star"></i>
-                      <i class="bi bi-star"></i>
-                      <i class="bi bi-star"></i>
-                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
                       <i class="bi bi-star"></i>
                     </div>
                   </div>
                 </div>
+
                 <div class="carousel-item">
                   <div class="row mb-5">
                     <div class="col-6">
                       <iframe
-                        src="https://www.youtube.com/embed/oZ6iiRrz1SY"
+                        src="https://www.youtube.com/embed/3eGP6im8AZA"
                         title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -162,38 +162,43 @@
                       ></iframe>
                     </div>
                     <div class="col-6">
-                      <h2>Morbious</h2>
+                      <h2>The Black Phone</h2>
                       <p>
-                        <b>Sinopse:</b> Lorem ipsum, dolor sit amet consectetur
-                        adipisicing elit. Fugiat laudantium quidem sed
-                        inventore. Rem vero perferendis saepe reiciendis modi
-                        itaque dolorum tenetur illo tempore non rerum omnis,
-                        reprehenderit est iste?
+                        <b>Sinopse:</b> Finney Shaw um tímido, mas perspicaz,
+                        rapaz de 13 anos, é raptado por um sádico assassino
+                        (protagonizado por Ethan Hawke, ator nomeado 4 vezes
+                        para os Óscares) que o enclausura numa cave à prova de
+                        som, onde gritar não vai resolver nada. Quando um
+                        telefone desligado começa a tocar, Finney descobre que
+                        consegue ouvir as vozes das vítimas anteriores do
+                        assassino. E elas estão decididas a assegurar que o que
+                        lhes aconteceu não acontece a Finney.
                       </p>
 
                       <div class="diretor d-flex justify-content-between">
-                        <p><b>Diretor:</b> Sei la</p>
-                        <p><b>Diretor:</b> Sei la</p>
-                        <p><b>Diretor:</b> Sei la</p>
+                        <p><b>Diretor:</b> Scott Derrickson</p>
+                        <p><b>Roteiro:</b> Scott Derrickson</p>
+                        <p><b>Estreia:</b> 2022</p>
                       </div>
 
                       <p><b>Elenco:</b></p>
 
-                      <p>Nome do ator 1 | Nome do ator 3 | Nome do ator 3</p>
+                      <p>Ethan Hawke | Mason Thames | Madeleine McGraw</p>
 
-                      <i class="bi bi-star"></i>
-                      <i class="bi bi-star"></i>
-                      <i class="bi bi-star"></i>
-                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
                       <i class="bi bi-star"></i>
                     </div>
                   </div>
                 </div>
+
                 <div class="carousel-item">
                   <div class="row mb-5">
                     <div class="col-6">
                       <iframe
-                        src="https://www.youtube.com/embed/oZ6iiRrz1SY"
+                        src="https://www.youtube.com/embed/59MJfJPP5eo"
                         title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -201,29 +206,34 @@
                       ></iframe>
                     </div>
                     <div class="col-6">
-                      <h2>Morbious</h2>
+                      <h2>Firestarter</h2>
                       <p>
-                        <b>Sinopse:</b> Lorem ipsum, dolor sit amet consectetur
-                        adipisicing elit. Fugiat laudantium quidem sed
-                        inventore. Rem vero perferendis saepe reiciendis modi
-                        itaque dolorum tenetur illo tempore non rerum omnis,
-                        reprehenderit est iste?
+                        <b>Sinopse:</b> Durante mais de uma década, Andy e Vicky
+                        estiveram em fuga, desesperados por esconder a filha
+                        Charlie de alguém que pretende se beneficiar do seu dom
+                        de criar fogo e de o transformar numa arma. Andy ensinou
+                        a filha a controlar o seu poder, desencadeado pela dor,
+                        ou pela raiva. Mas, à medida que se aproxima o 11º
+                        aniversário de Charlie, ela tem cada vez mais
+                        dificuldades em dominar o fogo. Um incidente revela a
+                        localização da família e um agente misterioso é enviado
+                        para capturar Charlie.
                       </p>
 
                       <div class="diretor d-flex justify-content-between">
-                        <p><b>Diretor:</b> Sei la</p>
-                        <p><b>Diretor:</b> Sei la</p>
-                        <p><b>Diretor:</b> Sei la</p>
+                        <p><b>Diretor:</b> Keith Thomas</p>
+                        <p><b>Roteiro:</b> Jason Blum</p>
+                        <p><b>Estreia:</b> 2022</p>
                       </div>
 
                       <p><b>Elenco:</b></p>
 
-                      <p>Nome do ator 1 | Nome do ator 3 | Nome do ator 3</p>
+                      <p>Zac Efron | Ryan Kiera Armstrong | Michael Greyeyes</p>
 
-                      <i class="bi bi-star"></i>
-                      <i class="bi bi-star"></i>
-                      <i class="bi bi-star"></i>
-                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
                       <i class="bi bi-star"></i>
                     </div>
                   </div>
@@ -234,47 +244,61 @@
         </div>
       </section>
 
-      <section class="row em-destaque py-3">
+      <section class="row py-3" id="emdestaque">
         <div class="col-12">
           <div class="row">
-            <div class="col-9">
+            <div class="col-9 py-2">
               <h1>Em Destaque</h1>
             </div>
             <div class="col-3">
               <select class="form-select" aria-label="Default select example">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option selected>Categorias</option>
+                <option value="1">Clássicos</option>
+                <option value="2">Terror Psicológico</option>
+                <option value="3">Slasher</option>
               </select>
             </div>
           </div>
           <div class="row">
             <div class="col-3">
-              <img src="morbius.jpg" alt="morbius" class="w-100" />
+              <img src="img/us.png" alt="poster filme Us" class="w-100" />
             </div>
             <div class="col-3">
-              <img src="morbius.jpg" alt="morbius" class="w-100" />
+              <img
+                src="img/getout.png"
+                alt="post filme Get Out"
+                class="w-100"
+              />
             </div>
             <div class="col-3">
-              <img src="morbius.jpg" alt="morbius" class="w-100" />
+              <img
+                src="img/hereditary.png"
+                alt="poster filme Hereditário"
+                class="w-100"
+              />
             </div>
             <div class="col-3">
-              <img src="morbius.jpg" alt="morbius" class="w-100" />
+              <img
+                src="img/midsommar.png"
+                alt="post filme Midsommar"
+                class="w-100"
+              />
             </div>
           </div>
           <div class="row">
             <div class="col-12 py-3 d-flex justify-content-end">
-              <button type="button" class="btn btn-primary">Primary</button>
+              <button type="button" class="btn btn-danger">
+                + Carregar mais filmes
+              </button>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="row avaliacoes bg-light py-3">
+      <section class="row bg-light py-3" id="avaliacoes">
         <div class="col-12">
           <div class="row">
-            <div class="col-12">
+            <div class="col-12 py-2">
               <h1>Últimas Avaliações</h1>
             </div>
           </div>
@@ -364,16 +388,18 @@
 
           <div class="row">
             <div class="col-12 py-3 d-flex justify-content-end">
-              <button type="button" class="btn btn-primary">Primary</button>
+              <button type="button" class="btn btn-danger">
+                + Carregar mais avaliações
+              </button>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="row entrevistas py-3">
+      <section class="row py-3" id="entrevistas">
         <div class="col-12">
           <div class="row">
-            <div class="col-12">
+            <div class="col-12 py-2">
               <h1>Entrevistas & Making of</h1>
             </div>
           </div>
@@ -381,7 +407,7 @@
             <div class="col-4">
               <div>
                 <iframe
-                  src="https://www.youtube.com/embed/oZ6iiRrz1SY"
+                  src="https://www.youtube.com/embed/In8fuzj3gck"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -389,7 +415,7 @@
                 ></iframe>
               </div>
 
-              <p><b>Filme:</b> Nome do Filme</p>
+              <p><b>Filme:</b> Nope</p>
               <p><b>Diretor:</b> Nome Diretor</p>
               <p><b>Roteiro:</b> Nome roteiro</p>
             </div>
@@ -397,7 +423,7 @@
             <div class="col-4">
               <div>
                 <iframe
-                  src="https://www.youtube.com/embed/oZ6iiRrz1SY"
+                  src="https://www.youtube.com/embed/44m-VAO5lAc"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -405,7 +431,7 @@
                 ></iframe>
               </div>
 
-              <p><b>Filme:</b> Nome do Filme</p>
+              <p><b>Filme:</b> Scream 5</p>
               <p><b>Diretor:</b> Nome Diretor</p>
               <p><b>Roteiro:</b> Nome roteiro</p>
             </div>
@@ -413,7 +439,7 @@
             <div class="col-4">
               <div>
                 <iframe
-                  src="https://www.youtube.com/embed/oZ6iiRrz1SY"
+                  src="https://www.youtube.com/embed/VhqTmB0NHxc"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -421,20 +447,22 @@
                 ></iframe>
               </div>
 
-              <p><b>Filme:</b> Nome do Filme</p>
+              <p><b>Filme:</b> Split</p>
               <p><b>Diretor:</b> Nome Diretor</p>
               <p><b>Roteiro:</b> Nome roteiro</p>
             </div>
           </div>
           <div class="row">
             <div class="col-12 py-3 d-flex justify-content-end">
-              <button type="button" class="btn btn-primary">Primary</button>
+              <button type="button" class="btn btn-danger">
+                + Carregar mais filmes
+              </button>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="row novidades">
+      <section class="row bg-light py-3" id="novidades">
         <div class="col-1"></div>
         <div class="col-7">
           <div class="row">
@@ -443,59 +471,71 @@
             </div>
           </div>
           <div class="row materia py-2">
-            <div class="col-3">
-              <img src="morbius.jpg" alt="morbius" class="w-100" />
+            <div class="col-3 d-flex align-items-center">
+              <img src="img/batman.png" alt="batman" class="w-100" />
             </div>
             <div class="col-9">
-              <h2>Titulo da Materia</h2>
+              <h2>Batman já tem data de estreia em plataformas digitais</h2>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
-                assumenda nam modi. Esse atque vel quis? Voluptatum doloribus
-                eius laborum optio alias dolorum rerum quis, suscipit voluptate
-                eum consequatur officia.
+                O filme Batman não terá apenas a opção da HBO Max para ser visto
+                pelos fãs por meio de streaming. A produção poderá ser alugada
+                nos serviços Amazon Prime, Claro NOW, SKY, UOL Play, Vivo Play,
+                Watch, YouTube e Apple TV a partir do dia 18 de abril.
               </p>
 
-              <span class="badge rounded-pill bg-secondary">Secondary</span>
-              <span class="badge rounded-pill bg-secondary">Secondary</span>
-              <span class="badge rounded-pill bg-secondary">Secondary</span>
+              <span class="badge rounded-pill bg-secondary">Hollywood</span>
+              <span class="badge rounded-pill bg-secondary">Oscar</span>
+              <span class="badge rounded-pill bg-secondary">Melhor filme</span>
             </div>
           </div>
           <hr />
           <div class="row materia py-2">
-            <div class="col-3">
-              <img src="morbius.jpg" alt="morbius" class="w-100" />
+            <div class="col-3 d-flex align-items-center">
+              <img
+                src="img/DarkHarvest.png"
+                alt=" dark harvest"
+                class="w-100"
+              />
             </div>
             <div class="col-9">
-              <h2>Titulo da Materia</h2>
+              <h2>Dark Harvest já tem data de estreia</h2>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
-                assumenda nam modi. Esse atque vel quis? Voluptatum doloribus
-                eius laborum optio alias dolorum rerum quis, suscipit voluptate
-                eum consequatur officia.
+                Estrelado por Emyri Crutchfield e Casey Likes, o filme tem como
+                data de estreia definida o dia 9 de setembro de 2022. A obra
+                conta a história de uma pequena cidade que é aterrorizada por
+                uma criatura chamada October Boy, e a ansiedade do público é ver
+                como será sua adaptação para os cinemas, já que ele faz parte de
+                um livro de mesmo nome.
               </p>
 
-              <span class="badge rounded-pill bg-secondary">Secondary</span>
-              <span class="badge rounded-pill bg-secondary">Secondary</span>
-              <span class="badge rounded-pill bg-secondary">Secondary</span>
+              <span class="badge rounded-pill bg-secondary">Hollywood</span>
+              <span class="badge rounded-pill bg-secondary">Oscar</span>
+              <span class="badge rounded-pill bg-secondary">Melhor filme</span>
             </div>
           </div>
           <hr />
           <div class="row materia py-2">
-            <div class="col-3">
-              <img src="morbius.jpg" alt="morbius" class="w-100" />
+            <div class="col-3 d-flex align-items-center">
+              <img src="img/drestranho.png" alt="dr estranho" class="w-100" />
             </div>
             <div class="col-9">
-              <h2>Titulo da Materia</h2>
+              <h2>
+                Pôster de Doutor Estranho 2 é modificado na Itália por motivo
+                hilário
+              </h2>
               <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas
-                assumenda nam modi. Esse atque vel quis? Voluptatum doloribus
-                eius laborum optio alias dolorum rerum quis, suscipit voluptate
-                eum consequatur officia.
+                Para sua estreia na Itália, o pôster oficial de Doutor Estranho
+                no Multiverso da Loucura precisou passar por uma alteração no
+                gesto que o personagem principal faz na imagem. O gesto dos
+                “chifrinhos” com as mãos é conhecido entre os americanos por seu
+                significado de rock and roll, mas na Itália e na região do
+                Mediterrâneo é considerado ofensivo, como uma forma de chamar
+                alguém de corno.
               </p>
 
-              <span class="badge rounded-pill bg-secondary">Secondary</span>
-              <span class="badge rounded-pill bg-secondary">Secondary</span>
-              <span class="badge rounded-pill bg-secondary">Secondary</span>
+              <span class="badge rounded-pill bg-secondary">Hollywood</span>
+              <span class="badge rounded-pill bg-secondary">Oscar</span>
+              <span class="badge rounded-pill bg-secondary">Melhor filme</span>
             </div>
           </div>
         </div>
@@ -512,10 +552,10 @@
 
           <i class="bi bi-person-fill"></i>
           <span><b>Redacao:</b> Nome do redator</span>
-
+          <br />
           <i class="bi bi-person-fill"></i>
           <span><b>Pesquisa:</b> Nome do redator</span>
-
+          <br />
           <i class="bi bi-person-fill"></i>
           <span><b>Gerente Geral:</b> Nome do redator</span>
 
