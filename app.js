@@ -34,7 +34,7 @@ function renderCarroussel(results) {
 
           <div class="d-flex justify-content-end">
             <a
-              href="detalhes.html?id="
+              href="detalhes.html?id=${movie.id}"
               id="detail-link"
               class="btn btn-danger btn-sm"
             >
