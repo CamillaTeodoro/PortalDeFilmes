@@ -26,20 +26,25 @@ function renderSearch(results) {
   }
   resultsElement.innerHTML = "";
   for (const result of results) {
-    const template = html` <div class="col-md-4">
+    const template = html` <div class="col-md-6">
       <div class="card">
-        <img
-          class="card-img-top"
-          src="https://image.tmdb.org/t/p/w200/${result.poster_path}"
-          alt="Card
-        image cap"
-        />
         <div class="card-body">
-          <h5 class="card-title">${result.title}</h5>
-          <p class="card-text">${result.overview}</p>
-          <a href="detalhes.html?id=${result.id}" class="btn btn-dark"
-            >Saiba mais...</a
-          >
+          <div class="row">
+            <div class="col-6">
+              <img
+                class="card-img-top img-search "
+                src="https://image.tmdb.org/t/p/w200/${result.poster_path}"
+                alt="Card image cap"
+              />
+            </div>
+            <div class="col-6">
+              <h5 class="card-title">${result.title}</h5>
+              <p class="card-text">${result.overview}</p>
+              <a href="detalhes.html?id=${result.id}" class="btn btn-dark"
+                >Saiba mais...</a
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>`;
