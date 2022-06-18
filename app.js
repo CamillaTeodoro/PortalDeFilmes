@@ -25,7 +25,7 @@ function renderCarroussel(results) {
     const template = html` <div class="carousel-item ${i == 0 ? "active" : ""}">
       <div class="row mb-5">
         <div class="col-md-4 d-flex justify-content-center">
-          <img src="https://image.tmdb.org/t/p/w200/${movie.poster_path}" />
+          <img src="https://image.tmdb.org/t/p/w300/${movie.poster_path}" />
         </div>
         <div class="col-md-8">
           <h2>${movie.title}</h2>

@@ -20,7 +20,7 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
       <div class="container">
-        <a href="#" class="navbar-brand">Portal de Filmes</a>
+        <a href="index.html" class="navbar-brand">Portal de Filmes</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -50,14 +50,25 @@
               <a href="#novidades" class="navbar-link">Novidades</a>
             </li>
           </ul>
-          <form class="d-flex justify-content-end">
+          <form
+            class="d-flex justify-content-end"
+            id="search-bar"
+            method="GET"
+            action="pesquisa.html"
+          >
             <input
               class="form-control me-2 form-control-sm"
               type="search"
               placeholder="Pesquisar filme"
               aria-label="Search"
+              id="search-item"
+              name="search"
             />
-            <button class="btn btn-sm btn-outline-danger" type="submit">
+            <button
+              id="search-button"
+              class="btn btn-sm btn-outline-danger"
+              type="submit"
+            >
               Pesquisar
             </button>
           </form>
@@ -71,88 +82,7 @@
         >
           <h1>Resultados</h1>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-3 mb-3">
-          <div class="col-md-4">
-            <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap" />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="row" id="results"></div>
       </div>
     </div>
     <footer class="row bg-dark py-3 footer-css">
@@ -172,5 +102,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="pesquisa.js"></script>
   </body>
 </html>

@@ -50,14 +50,25 @@
               <a href="#novidades" class="navbar-link">Novidades</a>
             </li>
           </ul>
-          <form class="d-flex justify-content-end">
+          <form
+            class="d-flex justify-content-end"
+            id="search-bar"
+            method="GET"
+            action="pesquisa.html"
+          >
             <input
               class="form-control me-2 form-control-sm"
               type="search"
               placeholder="Pesquisar filme"
               aria-label="Search"
+              id="search-item"
+              name="search"
             />
-            <button class="btn btn-sm btn-outline-danger" type="submit">
+            <button
+              id="search-button"
+              class="btn btn-sm btn-outline-danger"
+              type="submit"
+            >
               Pesquisar
             </button>
           </form>
