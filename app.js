@@ -3,7 +3,7 @@ const html = String.raw;
 //faz a requisição
 const init = () => {
   fetch(
-    "https://api.themoviedb.org/3/movie/200/similar?api_key=c3dd593c326e1089087cacfc0c68ab56&language=pt-BR"
+    "https://api.themoviedb.org/3/movie/458723/recommendations?api_key=c3dd593c326e1089087cacfc0c68ab56&language=pt-BR"
   )
     .then(function (response) {
       return response.json();
