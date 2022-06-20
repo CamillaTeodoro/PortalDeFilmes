@@ -1,4 +1,6 @@
+//melhorar a visibilidade do html dentro do js
 const html = String.raw;
+//faz a requisição
 const init = () => {
   fetch(
     "https://api.themoviedb.org/3/movie/200/similar?api_key=c3dd593c326e1089087cacfc0c68ab56&language=pt-BR"
@@ -11,15 +13,17 @@ const init = () => {
       renderCarroussel(myJson.results);
     });
 };
-
+//função para montar o carrossel
 function renderCarroussel(results) {
   const renderFilms = document.getElementById("render-films");
   const renderButtons = document.getElementById("carroussel-button");
   if (renderFilms == null || renderButtons == null) {
     return;
   }
+  //inicia vazio
   renderFilms.innerHTML = "";
   renderButtons.innerHTML = "";
+  //cria o template de acordo com os itens recebidos da API
   for (let i = 0; i < results.length; i++) {
     const movie = results[i];
     const template = html` <div class="carousel-item ${i == 0 ? "active" : ""}">
@@ -44,7 +48,9 @@ function renderCarroussel(results) {
         </div>
       </div>
     </div>`;
+    // acumula os templates e mostra na tela
     renderFilms.innerHTML += template;
+    //cria os botões para passar filmes do carrossel
     const templateButton = html` <button
       type="button"
       data-bs-target="#carouselExampleIndicators"
@@ -56,5 +62,5 @@ function renderCarroussel(results) {
     renderButtons.innerHTML += templateButton;
   }
 }
-
+//carrega o body e recebe init
 document.body.onload = init;

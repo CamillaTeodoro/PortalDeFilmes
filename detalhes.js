@@ -1,4 +1,6 @@
+//melhorar a visibilidade do html dentro do js
 const html = String.raw;
+//faz a requisição
 const init = () => {
   // https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
   const urlSearchParams = new URLSearchParams(window.location.search);

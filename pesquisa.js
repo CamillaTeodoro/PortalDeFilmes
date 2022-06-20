@@ -1,4 +1,6 @@
+//melhorar a visibilidade do html dentro do js
 const html = String.raw;
+//faz a requisição
 const init = () => {
   // https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
   const urlSearchParams = new URLSearchParams(window.location.search);
@@ -18,13 +20,14 @@ const init = () => {
     });
   console.log(params);
 };
-
+// função para renderizar dados na tela
 function renderSearch(results) {
   const resultsElement = document.getElementById("results");
   if (resultsElement == null) {
     return;
   }
   resultsElement.innerHTML = "";
+  //cria o template de acordo com os itens recebidos da API
   for (const result of results) {
     const template = html` <div class="col-md-6">
       <div class="card">
@@ -48,8 +51,9 @@ function renderSearch(results) {
         </div>
       </div>
     </div>`;
+    // acumula os templates e mostra na tela
     resultsElement.innerHTML += template;
   }
 }
-
+//carrega o body e recebe init
 document.body.onload = init;
